@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_sheard_texts",
+  "info": {
+    "displayName": "text",
+    "icon": "bulletList",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

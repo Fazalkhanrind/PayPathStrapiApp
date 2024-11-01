@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_sheard_ratings",
+  "info": {
+    "displayName": "rating"
+  },
+  "options": {},
+  "attributes": {
+    "stars": {
+      "type": "biginteger"
+    },
+    "text": {
+      "type": "text"
+    }
+  }
+}

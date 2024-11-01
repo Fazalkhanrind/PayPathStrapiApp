@@ -1,0 +1,45 @@
+{
+  "collectionName": "components_block_abouts",
+  "info": {
+    "displayName": "about",
+    "icon": "apps",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sheard.text"
+    },
+    "videoLink": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "files",
+        "videos"
+      ]
+    },
+    "aboutStatus": {
+      "type": "component",
+      "repeatable": true,
+      "component": "sheard.status"
+    },
+    "images": {
+      "type": "component",
+      "repeatable": true,
+      "component": "sheard.image"
+    },
+    "rating": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sheard.rating"
+    },
+    "AboutButton": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sheard.button"
+    }
+  }
+}

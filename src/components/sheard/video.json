@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_sheard_videos",
+  "info": {
+    "displayName": "video",
+    "icon": "chartPie"
+  },
+  "options": {},
+  "attributes": {
+    "video": {
+      "allowedTypes": [
+        "files",
+        "videos"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_sheard_statuses",
+  "info": {
+    "displayName": "status"
+  },
+  "options": {},
+  "attributes": {
+    "value": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}
