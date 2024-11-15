@@ -26,11 +26,6 @@
       "repeatable": true,
       "component": "sheard.status"
     },
-    "images": {
-      "type": "component",
-      "repeatable": true,
-      "component": "sheard.image"
-    },
     "rating": {
       "type": "component",
       "repeatable": false,
@@ -40,6 +35,15 @@
       "type": "component",
       "repeatable": false,
       "component": "sheard.button"
+    },
+    "RatingPeopleImages": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
     }
   }
 }

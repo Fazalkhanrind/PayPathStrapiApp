@@ -381,10 +381,11 @@ export interface ApiLandingPageLandingPage extends Struct.CollectionTypeSchema {
     draftAndPublish: true;
   };
   attributes: {
-    components: Schema.Attribute.DynamicZone<['block.about']>;
+    About: Schema.Attribute.Component<'block.about', false>;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    Goals: Schema.Attribute.Component<'block.goal', false>;
     hero: Schema.Attribute.Component<'sheard.text', false>;
     HeroBackgroundImage: Schema.Attribute.Media<'images' | 'files'>;
     HeroButton: Schema.Attribute.Component<'sheard.button', false>;
@@ -395,6 +396,7 @@ export interface ApiLandingPageLandingPage extends Struct.CollectionTypeSchema {
       'api::landing-page.landing-page'
     > &
       Schema.Attribute.Private;
+    Partner: Schema.Attribute.Component<'block.partners', false>;
     publishedAt: Schema.Attribute.DateTime;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &

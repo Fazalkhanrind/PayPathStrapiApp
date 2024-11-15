@@ -10,10 +10,32 @@ export interface BlockAbout extends Struct.ComponentSchema {
   attributes: {
     AboutButton: Schema.Attribute.Component<'sheard.button', false>;
     aboutStatus: Schema.Attribute.Component<'sheard.status', true>;
-    images: Schema.Attribute.Component<'sheard.image', true>;
     rating: Schema.Attribute.Component<'sheard.rating', false>;
+    RatingPeopleImages: Schema.Attribute.Media<'images' | 'files', true>;
     text: Schema.Attribute.Component<'sheard.text', false>;
     videoLink: Schema.Attribute.Media<'files' | 'videos'>;
+  };
+}
+
+export interface BlockGoal extends Struct.ComponentSchema {
+  collectionName: 'components_block_goals';
+  info: {
+    description: '';
+    displayName: 'Goal';
+  };
+  attributes: {
+    card: Schema.Attribute.Component<'sheard.goal-card', true>;
+    GoalHeadText: Schema.Attribute.Component<'sheard.text', false>;
+  };
+}
+
+export interface BlockPartners extends Struct.ComponentSchema {
+  collectionName: 'components_block_partners';
+  info: {
+    displayName: 'Partners';
+  };
+  attributes: {
+    Logos: Schema.Attribute.Component<'sheard.image', true>;
   };
 }
 
@@ -25,6 +47,19 @@ export interface SheardButton extends Struct.ComponentSchema {
   attributes: {
     ButtonLink: Schema.Attribute.String;
     ButtonText: Schema.Attribute.String;
+  };
+}
+
+export interface SheardGoalCard extends Struct.ComponentSchema {
+  collectionName: 'components_sheard_goal_cards';
+  info: {
+    description: '';
+    displayName: 'GoalCard';
+  };
+  attributes: {
+    CardDescription: Schema.Attribute.Text;
+    CardIcon: Schema.Attribute.Media<'images' | 'files', true>;
+    CardTitel: Schema.Attribute.String;
   };
 }
 
@@ -93,7 +128,10 @@ declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
       'block.about': BlockAbout;
+      'block.goal': BlockGoal;
+      'block.partners': BlockPartners;
       'sheard.button': SheardButton;
+      'sheard.goal-card': SheardGoalCard;
       'sheard.image': SheardImage;
       'sheard.rating': SheardRating;
       'sheard.status': SheardStatus;

@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_sheard_goal_cards",
+  "info": {
+    "displayName": "GoalCard",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "CardTitel": {
+      "type": "string"
+    },
+    "CardDescription": {
+      "type": "text"
+    },
+    "CardIcon": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
+    }
+  }
+}

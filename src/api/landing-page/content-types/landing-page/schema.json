@@ -40,11 +40,20 @@
         "files"
       ]
     },
-    "components": {
-      "type": "dynamiczone",
-      "components": [
-        "block.about"
-      ]
+    "About": {
+      "type": "component",
+      "repeatable": false,
+      "component": "block.about"
+    },
+    "Goals": {
+      "type": "component",
+      "repeatable": false,
+      "component": "block.goal"
+    },
+    "Partner": {
+      "type": "component",
+      "repeatable": false,
+      "component": "block.partners"
     }
   }
 }

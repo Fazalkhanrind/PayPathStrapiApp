@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_block_partners",
+  "info": {
+    "displayName": "Partners"
+  },
+  "options": {},
+  "attributes": {
+    "Logos": {
+      "type": "component",
+      "repeatable": true,
+      "component": "sheard.image"
+    }
+  }
+}
