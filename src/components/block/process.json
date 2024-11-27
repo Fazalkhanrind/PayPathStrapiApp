@@ -1,0 +1,36 @@
+{
+  "collectionName": "components_block_processes",
+  "info": {
+    "displayName": "Process",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "HeadText": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sheard.text"
+    },
+    "Cards": {
+      "type": "component",
+      "repeatable": true,
+      "component": "sheard.card"
+    },
+    "Button": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sheard.button"
+    }
+  }
+}

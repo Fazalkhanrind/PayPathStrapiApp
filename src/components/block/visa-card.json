@@ -1,0 +1,40 @@
+{
+  "collectionName": "components_block_visa_cards",
+  "info": {
+    "displayName": "VisaCard",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "CoverImage": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sheard.image"
+    },
+    "Info": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sheard.text"
+    },
+    "Button": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sheard.button"
+    },
+    "banner": {
+      "type": "component",
+      "repeatable": true,
+      "component": "sheard.image"
+    },
+    "integration": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sheard.integrations"
+    },
+    "CardImage": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sheard.image"
+    }
+  }
+}

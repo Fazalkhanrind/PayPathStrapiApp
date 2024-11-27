@@ -1,0 +1,34 @@
+{
+  "collectionName": "components_sheard_testimonial_cards",
+  "info": {
+    "displayName": "TestimonialCard",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "ProfileImage": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sheard.image"
+    },
+    "AboutDescription": {
+      "type": "text"
+    },
+    "Rating": {
+      "type": "integer",
+      "max": 5,
+      "min": 0
+    },
+    "Name": {
+      "type": "string"
+    },
+    "Destination": {
+      "type": "string"
+    },
+    "logo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sheard.image"
+    }
+  }
+}

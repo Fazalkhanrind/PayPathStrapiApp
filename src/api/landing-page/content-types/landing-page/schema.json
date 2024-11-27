@@ -40,11 +40,45 @@
         "files"
       ]
     },
-    "components": {
-      "type": "dynamiczone",
-      "components": [
-        "block.about"
-      ]
+    "About": {
+      "type": "component",
+      "repeatable": false,
+      "component": "block.about"
+    },
+    "Goals": {
+      "type": "component",
+      "repeatable": false,
+      "component": "block.goal"
+    },
+    "Partner": {
+      "type": "component",
+      "repeatable": false,
+      "component": "block.partners"
+    },
+    "Process": {
+      "type": "component",
+      "repeatable": false,
+      "component": "block.process"
+    },
+    "Services": {
+      "type": "component",
+      "repeatable": false,
+      "component": "block.visa"
+    },
+    "Visa": {
+      "type": "component",
+      "repeatable": false,
+      "component": "block.visa-card"
+    },
+    "PricingSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "block.pricing"
+    },
+    "Testimonials": {
+      "type": "component",
+      "repeatable": false,
+      "component": "block.testimonials"
     }
   }
 }

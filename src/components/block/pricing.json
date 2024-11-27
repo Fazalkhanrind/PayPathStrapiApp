@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_block_pricings",
+  "info": {
+    "displayName": "Pricing",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Image": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sheard.image"
+    },
+    "mainText": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sheard.text"
+    },
+    "PricingCard": {
+      "type": "component",
+      "repeatable": true,
+      "component": "sheard.pricing-card"
+    },
+    "Button": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sheard.button"
+    }
+  }
+}
