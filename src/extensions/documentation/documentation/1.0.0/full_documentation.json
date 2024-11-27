@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2024-11-15T10:02:57.370Z"
+    "x-generation-date": "2024-11-27T07:52:36.902Z"
   },
   "x-strapi-config": {
     "plugins": [
@@ -2042,6 +2042,21 @@
               "Partner": {
                 "$ref": "#/components/schemas/BlockPartnersComponent"
               },
+              "Process": {
+                "$ref": "#/components/schemas/BlockProcessComponent"
+              },
+              "Services": {
+                "$ref": "#/components/schemas/BlockVisaComponent"
+              },
+              "Visa": {
+                "$ref": "#/components/schemas/BlockVisaCardComponent"
+              },
+              "PricingSection": {
+                "$ref": "#/components/schemas/BlockPricingComponent"
+              },
+              "Testimonials": {
+                "$ref": "#/components/schemas/BlockTestimonialsComponent"
+              },
               "locale": {
                 "type": "string"
               },
@@ -2849,6 +2864,21 @@
           "Partner": {
             "$ref": "#/components/schemas/BlockPartnersComponent"
           },
+          "Process": {
+            "$ref": "#/components/schemas/BlockProcessComponent"
+          },
+          "Services": {
+            "$ref": "#/components/schemas/BlockVisaComponent"
+          },
+          "Visa": {
+            "$ref": "#/components/schemas/BlockVisaCardComponent"
+          },
+          "PricingSection": {
+            "$ref": "#/components/schemas/BlockPricingComponent"
+          },
+          "Testimonials": {
+            "$ref": "#/components/schemas/BlockTestimonialsComponent"
+          },
           "createdAt": {
             "type": "string",
             "format": "date-time"
@@ -3169,6 +3199,21 @@
                 },
                 "Partner": {
                   "$ref": "#/components/schemas/BlockPartnersComponent"
+                },
+                "Process": {
+                  "$ref": "#/components/schemas/BlockProcessComponent"
+                },
+                "Services": {
+                  "$ref": "#/components/schemas/BlockVisaComponent"
+                },
+                "Visa": {
+                  "$ref": "#/components/schemas/BlockVisaCardComponent"
+                },
+                "PricingSection": {
+                  "$ref": "#/components/schemas/BlockPricingComponent"
+                },
+                "Testimonials": {
+                  "$ref": "#/components/schemas/BlockTestimonialsComponent"
                 },
                 "createdAt": {
                   "type": "string",
@@ -3895,6 +3940,499 @@
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/SheardImageComponent"
+            }
+          }
+        }
+      },
+      "SheardCardComponent": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "number"
+          },
+          "Image": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "number"
+              },
+              "documentId": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "alternativeText": {
+                "type": "string"
+              },
+              "caption": {
+                "type": "string"
+              },
+              "width": {
+                "type": "integer"
+              },
+              "height": {
+                "type": "integer"
+              },
+              "formats": {},
+              "hash": {
+                "type": "string"
+              },
+              "ext": {
+                "type": "string"
+              },
+              "mime": {
+                "type": "string"
+              },
+              "size": {
+                "type": "number",
+                "format": "float"
+              },
+              "url": {
+                "type": "string"
+              },
+              "previewUrl": {
+                "type": "string"
+              },
+              "provider": {
+                "type": "string"
+              },
+              "provider_metadata": {},
+              "related": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "number"
+                    },
+                    "documentId": {
+                      "type": "string"
+                    }
+                  }
+                }
+              },
+              "folder": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "number"
+                  },
+                  "documentId": {
+                    "type": "string"
+                  }
+                }
+              },
+              "folderPath": {
+                "type": "string"
+              },
+              "createdAt": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "updatedAt": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "publishedAt": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "createdBy": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "number"
+                  },
+                  "documentId": {
+                    "type": "string"
+                  }
+                }
+              },
+              "updatedBy": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "number"
+                  },
+                  "documentId": {
+                    "type": "string"
+                  }
+                }
+              },
+              "locale": {
+                "type": "string"
+              },
+              "localizations": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "number"
+                    },
+                    "documentId": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "titel": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          }
+        }
+      },
+      "BlockProcessComponent": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "number"
+          },
+          "Image": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "number"
+              },
+              "documentId": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "alternativeText": {
+                "type": "string"
+              },
+              "caption": {
+                "type": "string"
+              },
+              "width": {
+                "type": "integer"
+              },
+              "height": {
+                "type": "integer"
+              },
+              "formats": {},
+              "hash": {
+                "type": "string"
+              },
+              "ext": {
+                "type": "string"
+              },
+              "mime": {
+                "type": "string"
+              },
+              "size": {
+                "type": "number",
+                "format": "float"
+              },
+              "url": {
+                "type": "string"
+              },
+              "previewUrl": {
+                "type": "string"
+              },
+              "provider": {
+                "type": "string"
+              },
+              "provider_metadata": {},
+              "related": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "number"
+                    },
+                    "documentId": {
+                      "type": "string"
+                    }
+                  }
+                }
+              },
+              "folder": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "number"
+                  },
+                  "documentId": {
+                    "type": "string"
+                  }
+                }
+              },
+              "folderPath": {
+                "type": "string"
+              },
+              "createdAt": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "updatedAt": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "publishedAt": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "createdBy": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "number"
+                  },
+                  "documentId": {
+                    "type": "string"
+                  }
+                }
+              },
+              "updatedBy": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "number"
+                  },
+                  "documentId": {
+                    "type": "string"
+                  }
+                }
+              },
+              "locale": {
+                "type": "string"
+              },
+              "localizations": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "number"
+                    },
+                    "documentId": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "HeadText": {
+            "$ref": "#/components/schemas/SheardTextComponent"
+          },
+          "Cards": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/SheardCardComponent"
+            }
+          },
+          "Button": {
+            "$ref": "#/components/schemas/SheardButtonComponent"
+          }
+        }
+      },
+      "SheardSocialMediaTransactionsComponent": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "number"
+          },
+          "PlatformName": {
+            "type": "string"
+          },
+          "TransectionDate": {
+            "type": "string",
+            "format": "date"
+          },
+          "Amount": {
+            "type": "number",
+            "format": "float"
+          },
+          "Icons": {
+            "type": "string",
+            "enum": [
+              "RiYoutubeFill",
+              "RiFacebookFill",
+              "RiInstagramFill",
+              "RiTwitterFill"
+            ]
+          }
+        }
+      },
+      "BlockVisaComponent": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "number"
+          },
+          "HeadText": {
+            "$ref": "#/components/schemas/SheardTextComponent"
+          },
+          "TextCard": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/SheardTextComponent"
+            }
+          },
+          "Image": {
+            "$ref": "#/components/schemas/SheardImageComponent"
+          },
+          "Button": {
+            "$ref": "#/components/schemas/SheardButtonComponent"
+          },
+          "RegisterButton": {
+            "$ref": "#/components/schemas/SheardButtonComponent"
+          },
+          "Transections": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/SheardSocialMediaTransactionsComponent"
+            }
+          }
+        }
+      },
+      "SheardIntegrationsComponent": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "number"
+          },
+          "Count": {
+            "type": "string"
+          },
+          "text": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          }
+        }
+      },
+      "BlockVisaCardComponent": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "number"
+          },
+          "CoverImage": {
+            "$ref": "#/components/schemas/SheardImageComponent"
+          },
+          "Info": {
+            "$ref": "#/components/schemas/SheardTextComponent"
+          },
+          "Button": {
+            "$ref": "#/components/schemas/SheardButtonComponent"
+          },
+          "banner": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/SheardImageComponent"
+            }
+          },
+          "integration": {
+            "$ref": "#/components/schemas/SheardIntegrationsComponent"
+          },
+          "CardImage": {
+            "$ref": "#/components/schemas/SheardImageComponent"
+          }
+        }
+      },
+      "SheardPricingCardComponent": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "number"
+          },
+          "SelectType": {
+            "type": "string",
+            "enum": [
+              "Personal",
+              "Business"
+            ]
+          },
+          "text": {
+            "type": "string"
+          },
+          "Price": {
+            "type": "string"
+          },
+          "Duration": {
+            "type": "string",
+            "enum": [
+              "Week",
+              "Month",
+              "Year"
+            ]
+          }
+        }
+      },
+      "BlockPricingComponent": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "number"
+          },
+          "Image": {
+            "$ref": "#/components/schemas/SheardImageComponent"
+          },
+          "mainText": {
+            "$ref": "#/components/schemas/SheardTextComponent"
+          },
+          "PricingCard": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/SheardPricingCardComponent"
+            }
+          },
+          "Button": {
+            "$ref": "#/components/schemas/SheardButtonComponent"
+          }
+        }
+      },
+      "SheardTestimonialCardComponent": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "number"
+          },
+          "ProfileImage": {
+            "$ref": "#/components/schemas/SheardImageComponent"
+          },
+          "AboutDescription": {
+            "type": "string"
+          },
+          "Rating": {
+            "type": "integer"
+          },
+          "Name": {
+            "type": "string"
+          },
+          "Destination": {
+            "type": "string"
+          },
+          "logo": {
+            "$ref": "#/components/schemas/SheardImageComponent"
+          }
+        }
+      },
+      "BlockTestimonialsComponent": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "number"
+          },
+          "MainText": {
+            "$ref": "#/components/schemas/SheardTextComponent"
+          },
+          "TestimonialList": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/SheardTestimonialCardComponent"
             }
           }
         }

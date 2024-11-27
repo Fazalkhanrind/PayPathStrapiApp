@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_sheard_integrations",
+  "info": {
+    "displayName": "integrations"
+  },
+  "options": {},
+  "attributes": {
+    "Count": {
+      "type": "string"
+    },
+    "text": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    }
+  }
+}

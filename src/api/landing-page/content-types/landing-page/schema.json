@@ -54,6 +54,31 @@
       "type": "component",
       "repeatable": false,
       "component": "block.partners"
+    },
+    "Process": {
+      "type": "component",
+      "repeatable": false,
+      "component": "block.process"
+    },
+    "Services": {
+      "type": "component",
+      "repeatable": false,
+      "component": "block.visa"
+    },
+    "Visa": {
+      "type": "component",
+      "repeatable": false,
+      "component": "block.visa-card"
+    },
+    "PricingSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "block.pricing"
+    },
+    "Testimonials": {
+      "type": "component",
+      "repeatable": false,
+      "component": "block.testimonials"
     }
   }
 }

@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_sheard_pricing_cards",
+  "info": {
+    "displayName": "PricingCard",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "SelectType": {
+      "type": "enumeration",
+      "enum": [
+        "Personal",
+        "Business"
+      ],
+      "default": "Personal"
+    },
+    "text": {
+      "type": "text"
+    },
+    "Price": {
+      "type": "string"
+    },
+    "Duration": {
+      "type": "enumeration",
+      "enum": [
+        "Week",
+        "Month",
+        "Year"
+      ],
+      "default": "Month"
+    }
+  }
+}

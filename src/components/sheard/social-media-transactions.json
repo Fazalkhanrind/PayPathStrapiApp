@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_sheard_social_media_transactions",
+  "info": {
+    "displayName": "SocialMediaTransactions",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "PlatformName": {
+      "type": "string"
+    },
+    "TransectionDate": {
+      "type": "date"
+    },
+    "Amount": {
+      "type": "decimal",
+      "default": 0
+    },
+    "Icons": {
+      "type": "enumeration",
+      "enum": [
+        "RiYoutubeFill",
+        "RiFacebookFill",
+        "RiInstagramFill",
+        "RiTwitterFill"
+      ],
+      "required": true
+    }
+  }
+}

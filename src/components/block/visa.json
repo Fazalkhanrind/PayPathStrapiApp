@@ -1,0 +1,40 @@
+{
+  "collectionName": "components_block_visas",
+  "info": {
+    "displayName": "Services",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "HeadText": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sheard.text"
+    },
+    "TextCard": {
+      "type": "component",
+      "repeatable": true,
+      "component": "sheard.text"
+    },
+    "Image": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sheard.image"
+    },
+    "Button": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sheard.button"
+    },
+    "RegisterButton": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sheard.button"
+    },
+    "Transections": {
+      "type": "component",
+      "repeatable": true,
+      "component": "sheard.social-media-transactions"
+    }
+  }
+}

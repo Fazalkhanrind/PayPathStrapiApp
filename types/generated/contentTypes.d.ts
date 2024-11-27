@@ -397,10 +397,15 @@ export interface ApiLandingPageLandingPage extends Struct.CollectionTypeSchema {
     > &
       Schema.Attribute.Private;
     Partner: Schema.Attribute.Component<'block.partners', false>;
+    PricingSection: Schema.Attribute.Component<'block.pricing', false>;
+    Process: Schema.Attribute.Component<'block.process', false>;
     publishedAt: Schema.Attribute.DateTime;
+    Services: Schema.Attribute.Component<'block.visa', false>;
+    Testimonials: Schema.Attribute.Component<'block.testimonials', false>;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    Visa: Schema.Attribute.Component<'block.visa-card', false>;
   };
 }
 
