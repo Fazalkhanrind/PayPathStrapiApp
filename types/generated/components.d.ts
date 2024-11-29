@@ -17,6 +17,19 @@ export interface BlockAbout extends Struct.ComponentSchema {
   };
 }
 
+export interface BlockFaq extends Struct.ComponentSchema {
+  collectionName: 'components_block_faqs';
+  info: {
+    description: '';
+    displayName: 'FAQ';
+  };
+  attributes: {
+    Button: Schema.Attribute.Component<'sheard.button', false>;
+    FAQs: Schema.Attribute.Component<'sheard.fa-qs-list', true>;
+    MainText: Schema.Attribute.Component<'sheard.text', false>;
+  };
+}
+
 export interface BlockGoal extends Struct.ComponentSchema {
   collectionName: 'components_block_goals';
   info: {
@@ -137,6 +150,17 @@ export interface SheardCard extends Struct.ComponentSchema {
     description: Schema.Attribute.Text;
     Image: Schema.Attribute.Media<'images' | 'files'>;
     titel: Schema.Attribute.String;
+  };
+}
+
+export interface SheardFaQsList extends Struct.ComponentSchema {
+  collectionName: 'components_sheard_fa_qs_lists';
+  info: {
+    displayName: 'FAQsList';
+  };
+  attributes: {
+    Answer: Schema.Attribute.Text;
+    Question: Schema.Attribute.String;
   };
 }
 
@@ -286,6 +310,7 @@ declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
       'block.about': BlockAbout;
+      'block.faq': BlockFaq;
       'block.goal': BlockGoal;
       'block.partners': BlockPartners;
       'block.pricing': BlockPricing;
@@ -295,6 +320,7 @@ declare module '@strapi/strapi' {
       'block.visa-card': BlockVisaCard;
       'sheard.button': SheardButton;
       'sheard.card': SheardCard;
+      'sheard.fa-qs-list': SheardFaQsList;
       'sheard.goal-card': SheardGoalCard;
       'sheard.image': SheardImage;
       'sheard.integrations': SheardIntegrations;

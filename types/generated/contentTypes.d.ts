@@ -385,6 +385,7 @@ export interface ApiLandingPageLandingPage extends Struct.CollectionTypeSchema {
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    FAQ: Schema.Attribute.Component<'block.faq', false>;
     Goals: Schema.Attribute.Component<'block.goal', false>;
     hero: Schema.Attribute.Component<'sheard.text', false>;
     HeroBackgroundImage: Schema.Attribute.Media<'images' | 'files'>;

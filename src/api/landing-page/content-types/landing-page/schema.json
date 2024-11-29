@@ -79,6 +79,11 @@
       "type": "component",
       "repeatable": false,
       "component": "block.testimonials"
+    },
+    "FAQ": {
+      "type": "component",
+      "repeatable": false,
+      "component": "block.faq"
     }
   }
 }

@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2024-11-27T07:52:36.902Z"
+    "x-generation-date": "2024-11-29T06:09:22.243Z"
   },
   "x-strapi-config": {
     "plugins": [
@@ -2057,6 +2057,9 @@
               "Testimonials": {
                 "$ref": "#/components/schemas/BlockTestimonialsComponent"
               },
+              "FAQ": {
+                "$ref": "#/components/schemas/BlockFaqComponent"
+              },
               "locale": {
                 "type": "string"
               },
@@ -2879,6 +2882,9 @@
           "Testimonials": {
             "$ref": "#/components/schemas/BlockTestimonialsComponent"
           },
+          "FAQ": {
+            "$ref": "#/components/schemas/BlockFaqComponent"
+          },
           "createdAt": {
             "type": "string",
             "format": "date-time"
@@ -3214,6 +3220,9 @@
                 },
                 "Testimonials": {
                   "$ref": "#/components/schemas/BlockTestimonialsComponent"
+                },
+                "FAQ": {
+                  "$ref": "#/components/schemas/BlockFaqComponent"
                 },
                 "createdAt": {
                   "type": "string",
@@ -4433,6 +4442,40 @@
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/SheardTestimonialCardComponent"
+            }
+          }
+        }
+      },
+      "SheardFaQsListComponent": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "number"
+          },
+          "Question": {
+            "type": "string"
+          },
+          "Answer": {
+            "type": "string"
+          }
+        }
+      },
+      "BlockFaqComponent": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "number"
+          },
+          "MainText": {
+            "$ref": "#/components/schemas/SheardTextComponent"
+          },
+          "Button": {
+            "$ref": "#/components/schemas/SheardButtonComponent"
+          },
+          "FAQs": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/SheardFaQsListComponent"
             }
           }
         }
