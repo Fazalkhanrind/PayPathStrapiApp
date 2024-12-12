@@ -84,6 +84,11 @@
       "type": "component",
       "repeatable": false,
       "component": "block.faq"
+    },
+    "Blogs": {
+      "type": "component",
+      "repeatable": false,
+      "component": "block.blog"
     }
   }
 }

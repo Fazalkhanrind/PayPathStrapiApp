@@ -369,6 +369,68 @@ export interface AdminUser extends Struct.CollectionTypeSchema {
   };
 }
 
+export interface ApiFooterSectionFooterSection extends Struct.SingleTypeSchema {
+  collectionName: 'footer_sections';
+  info: {
+    description: '';
+    displayName: 'FooterSection';
+    pluralName: 'footer-sections';
+    singularName: 'footer-section';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    Footer: Schema.Attribute.Component<'block.footer', false>;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::footer-section.footer-section'
+    > &
+      Schema.Attribute.Private;
+    NewsLetter: Schema.Attribute.Component<'block.news-letter', false>;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiHeaderSectionHeaderSection extends Struct.SingleTypeSchema {
+  collectionName: 'header_sections';
+  info: {
+    description: '';
+    displayName: 'HeaderSection';
+    pluralName: 'header-sections';
+    singularName: 'header-section';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    CompanyLogo: Schema.Attribute.Component<'sheard.image', false>;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    dropdownItem: Schema.Attribute.Component<'sheard.button', true>;
+    dropdownLable: Schema.Attribute.String;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::header-section.header-section'
+    > &
+      Schema.Attribute.Private;
+    MainMenuItems: Schema.Attribute.Component<'sheard.button', true>;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiLandingPageLandingPage extends Struct.CollectionTypeSchema {
   collectionName: 'landing_pages';
   info: {
@@ -382,6 +444,7 @@ export interface ApiLandingPageLandingPage extends Struct.CollectionTypeSchema {
   };
   attributes: {
     About: Schema.Attribute.Component<'block.about', false>;
+    Blogs: Schema.Attribute.Component<'block.blog', false>;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -915,6 +978,8 @@ declare module '@strapi/strapi' {
       'admin::transfer-token': AdminTransferToken;
       'admin::transfer-token-permission': AdminTransferTokenPermission;
       'admin::user': AdminUser;
+      'api::footer-section.footer-section': ApiFooterSectionFooterSection;
+      'api::header-section.header-section': ApiHeaderSectionHeaderSection;
       'api::landing-page.landing-page': ApiLandingPageLandingPage;
       'plugin::content-releases.release': PluginContentReleasesRelease;
       'plugin::content-releases.release-action': PluginContentReleasesReleaseAction;

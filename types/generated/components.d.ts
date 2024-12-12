@@ -17,6 +17,18 @@ export interface BlockAbout extends Struct.ComponentSchema {
   };
 }
 
+export interface BlockBlog extends Struct.ComponentSchema {
+  collectionName: 'components_block_blogs';
+  info: {
+    description: '';
+    displayName: 'Blog';
+  };
+  attributes: {
+    BlogCard: Schema.Attribute.Component<'sheard.blog-card', true>;
+    BlogHeadText: Schema.Attribute.Component<'sheard.text', false>;
+  };
+}
+
 export interface BlockFaq extends Struct.ComponentSchema {
   collectionName: 'components_block_faqs';
   info: {
@@ -30,6 +42,25 @@ export interface BlockFaq extends Struct.ComponentSchema {
   };
 }
 
+export interface BlockFooter extends Struct.ComponentSchema {
+  collectionName: 'components_block_footers';
+  info: {
+    description: '';
+    displayName: 'Footer';
+  };
+  attributes: {
+    Copyright: Schema.Attribute.Text;
+    FooterSlider: Schema.Attribute.Component<'sheard.image', true>;
+    logo: Schema.Attribute.Component<'sheard.image', false>;
+    menuItems: Schema.Attribute.Component<'sheard.button', true>;
+    SocialMedia: Schema.Attribute.Component<
+      'sheard.social-media-accounts',
+      true
+    >;
+    SubMenuItems: Schema.Attribute.Component<'sheard.button', true>;
+  };
+}
+
 export interface BlockGoal extends Struct.ComponentSchema {
   collectionName: 'components_block_goals';
   info: {
@@ -39,6 +70,19 @@ export interface BlockGoal extends Struct.ComponentSchema {
   attributes: {
     card: Schema.Attribute.Component<'sheard.goal-card', true>;
     GoalHeadText: Schema.Attribute.Component<'sheard.text', false>;
+  };
+}
+
+export interface BlockNewsLetter extends Struct.ComponentSchema {
+  collectionName: 'components_block_news_letters';
+  info: {
+    description: '';
+    displayName: 'NewsLetter';
+  };
+  attributes: {
+    Input: Schema.Attribute.Component<'sheard.input', false>;
+    MainText: Schema.Attribute.Component<'sheard.text', false>;
+    SubmitButton: Schema.Attribute.Component<'sheard.button', false>;
   };
 }
 
@@ -130,6 +174,20 @@ export interface BlockVisaCard extends Struct.ComponentSchema {
   };
 }
 
+export interface SheardBlogCard extends Struct.ComponentSchema {
+  collectionName: 'components_sheard_blog_cards';
+  info: {
+    description: '';
+    displayName: 'BlogCard';
+  };
+  attributes: {
+    Button: Schema.Attribute.Component<'sheard.button', false>;
+    Card: Schema.Attribute.Component<'sheard.card', false>;
+    date: Schema.Attribute.Date;
+    views: Schema.Attribute.String;
+  };
+}
+
 export interface SheardButton extends Struct.ComponentSchema {
   collectionName: 'components_sheard_buttons';
   info: {
@@ -192,6 +250,19 @@ export interface SheardImage extends Struct.ComponentSchema {
   };
 }
 
+export interface SheardInput extends Struct.ComponentSchema {
+  collectionName: 'components_sheard_inputs';
+  info: {
+    description: '';
+    displayName: 'Input';
+  };
+  attributes: {
+    IsRequired: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<true>;
+    Lable: Schema.Attribute.String;
+    Placeholder: Schema.Attribute.String;
+  };
+}
+
 export interface SheardIntegrations extends Struct.ComponentSchema {
   collectionName: 'components_sheard_integrations';
   info: {
@@ -228,6 +299,32 @@ export interface SheardRating extends Struct.ComponentSchema {
   attributes: {
     stars: Schema.Attribute.BigInteger;
     text: Schema.Attribute.Text;
+  };
+}
+
+export interface SheardSocialMedia extends Struct.ComponentSchema {
+  collectionName: 'components_sheard_social_medias';
+  info: {
+    description: '';
+    displayName: 'socialMedia';
+  };
+  attributes: {
+    Link: Schema.Attribute.String;
+    Logo: Schema.Attribute.Media<'images' | 'files'>;
+  };
+}
+
+export interface SheardSocialMediaAccounts extends Struct.ComponentSchema {
+  collectionName: 'components_sheard_social_media_accounts';
+  info: {
+    description: '';
+    displayName: 'SocialMediaAccounts';
+  };
+  attributes: {
+    Icons: Schema.Attribute.Enumeration<
+      ['RiTwitterXFill', 'RiFacebookFill', 'RiInstagramFill']
+    >;
+    Link: Schema.Attribute.Text;
   };
 }
 
@@ -310,22 +407,29 @@ declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
       'block.about': BlockAbout;
+      'block.blog': BlockBlog;
       'block.faq': BlockFaq;
+      'block.footer': BlockFooter;
       'block.goal': BlockGoal;
+      'block.news-letter': BlockNewsLetter;
       'block.partners': BlockPartners;
       'block.pricing': BlockPricing;
       'block.process': BlockProcess;
       'block.testimonials': BlockTestimonials;
       'block.visa': BlockVisa;
       'block.visa-card': BlockVisaCard;
+      'sheard.blog-card': SheardBlogCard;
       'sheard.button': SheardButton;
       'sheard.card': SheardCard;
       'sheard.fa-qs-list': SheardFaQsList;
       'sheard.goal-card': SheardGoalCard;
       'sheard.image': SheardImage;
+      'sheard.input': SheardInput;
       'sheard.integrations': SheardIntegrations;
       'sheard.pricing-card': SheardPricingCard;
       'sheard.rating': SheardRating;
+      'sheard.social-media': SheardSocialMedia;
+      'sheard.social-media-accounts': SheardSocialMediaAccounts;
       'sheard.social-media-transactions': SheardSocialMediaTransactions;
       'sheard.status': SheardStatus;
       'sheard.testimonial-card': SheardTestimonialCard;

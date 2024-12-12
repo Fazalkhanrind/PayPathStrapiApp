@@ -1,0 +1,38 @@
+{
+  "collectionName": "components_block_footers",
+  "info": {
+    "displayName": "Footer",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "logo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sheard.image"
+    },
+    "menuItems": {
+      "type": "component",
+      "repeatable": true,
+      "component": "sheard.button"
+    },
+    "SocialMedia": {
+      "type": "component",
+      "repeatable": true,
+      "component": "sheard.social-media-accounts"
+    },
+    "SubMenuItems": {
+      "type": "component",
+      "repeatable": true,
+      "component": "sheard.button"
+    },
+    "FooterSlider": {
+      "type": "component",
+      "repeatable": true,
+      "component": "sheard.image"
+    },
+    "Copyright": {
+      "type": "text"
+    }
+  }
+}

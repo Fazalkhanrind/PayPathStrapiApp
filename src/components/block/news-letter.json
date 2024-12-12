@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_block_news_letters",
+  "info": {
+    "displayName": "NewsLetter",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "MainText": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sheard.text"
+    },
+    "Input": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sheard.input"
+    },
+    "SubmitButton": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sheard.button"
+    }
+  }
+}
