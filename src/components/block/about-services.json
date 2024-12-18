@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_block_about_services",
+  "info": {
+    "displayName": "AboutServices"
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sheard.image"
+    },
+    "MainText": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sheard.text"
+    },
+    "Button": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sheard.button"
+    }
+  }
+}

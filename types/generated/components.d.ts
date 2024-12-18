@@ -17,6 +17,18 @@ export interface BlockAbout extends Struct.ComponentSchema {
   };
 }
 
+export interface BlockAboutServices extends Struct.ComponentSchema {
+  collectionName: 'components_block_about_services';
+  info: {
+    displayName: 'AboutServices';
+  };
+  attributes: {
+    Button: Schema.Attribute.Component<'sheard.button', false>;
+    image: Schema.Attribute.Component<'sheard.image', false>;
+    MainText: Schema.Attribute.Component<'sheard.text', false>;
+  };
+}
+
 export interface BlockBlog extends Struct.ComponentSchema {
   collectionName: 'components_block_blogs';
   info: {
@@ -121,6 +133,30 @@ export interface BlockProcess extends Struct.ComponentSchema {
     Cards: Schema.Attribute.Component<'sheard.card', true>;
     HeadText: Schema.Attribute.Component<'sheard.text', false>;
     Image: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+  };
+}
+
+export interface BlockSimplicity extends Struct.ComponentSchema {
+  collectionName: 'components_block_simplicities';
+  info: {
+    displayName: 'Simplicity';
+  };
+  attributes: {
+    Button: Schema.Attribute.Component<'sheard.button', false>;
+    MainText: Schema.Attribute.Component<'sheard.text', false>;
+  };
+}
+
+export interface BlockState extends Struct.ComponentSchema {
+  collectionName: 'components_block_states';
+  info: {
+    description: '';
+    displayName: 'State';
+  };
+  attributes: {
+    HeadText: Schema.Attribute.Component<'sheard.text', false>;
+    image: Schema.Attribute.Component<'sheard.image', false>;
+    StatsCards: Schema.Attribute.Component<'sheard.text', true>;
   };
 }
 
@@ -407,6 +443,7 @@ declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
       'block.about': BlockAbout;
+      'block.about-services': BlockAboutServices;
       'block.blog': BlockBlog;
       'block.faq': BlockFaq;
       'block.footer': BlockFooter;
@@ -415,6 +452,8 @@ declare module '@strapi/strapi' {
       'block.partners': BlockPartners;
       'block.pricing': BlockPricing;
       'block.process': BlockProcess;
+      'block.simplicity': BlockSimplicity;
+      'block.state': BlockState;
       'block.testimonials': BlockTestimonials;
       'block.visa': BlockVisa;
       'block.visa-card': BlockVisaCard;
