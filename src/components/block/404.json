@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_block_404s",
+  "info": {
+    "displayName": "404",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "FirstHead": {
+      "type": "string"
+    },
+    "SecondHead": {
+      "type": "string"
+    },
+    "ThirdHead": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "Button": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sheard.button"
+    },
+    "CompanyMedia": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sheard.company-social"
+    },
+    "Copyright": {
+      "type": "text"
+    }
+  }
+}

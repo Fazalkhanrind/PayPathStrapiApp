@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_block_main_texts",
+  "info": {
+    "displayName": "MainText"
+  },
+  "options": {},
+  "attributes": {
+    "TopText": {
+      "type": "component",
+      "repeatable": true,
+      "component": "sheard.text"
+    }
+  }
+}

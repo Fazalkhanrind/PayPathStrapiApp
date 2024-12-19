@@ -1,21 +1,20 @@
 {
   "kind": "collectionType",
-  "collectionName": "faqs",
+  "collectionName": "error_pages",
   "info": {
-    "singularName": "faq",
-    "pluralName": "faqs",
-    "displayName": "FAQHome",
-    "description": ""
+    "singularName": "error-page",
+    "pluralName": "error-pages",
+    "displayName": "ErrorPage"
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "FAQ": {
+    "Error404": {
       "type": "component",
       "repeatable": false,
-      "component": "block.faq"
+      "component": "block.404"
     }
   }
 }

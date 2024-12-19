@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_sheard_team_social_media_accounts",
+  "info": {
+    "displayName": "TeamSocialMediaAccount",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "FacebookLink": {
+      "type": "text"
+    },
+    "WhatsappLink": {
+      "type": "text"
+    },
+    "InstagramLink": {
+      "type": "text"
+    }
+  }
+}

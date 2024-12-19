@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "faqs",
+  "collectionName": "coming_soon_pages",
   "info": {
-    "singularName": "faq",
-    "pluralName": "faqs",
-    "displayName": "FAQHome",
+    "singularName": "coming-soon-page",
+    "pluralName": "coming-soon-pages",
+    "displayName": "ComingSoonPage",
     "description": ""
   },
   "options": {
@@ -12,10 +12,10 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "FAQ": {
+    "ComingSoon": {
       "type": "component",
       "repeatable": false,
-      "component": "block.faq"
+      "component": "block.coming-soon"
     }
   }
 }

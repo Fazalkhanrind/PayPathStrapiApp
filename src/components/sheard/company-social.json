@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_sheard_company_socials",
+  "info": {
+    "displayName": "CompanySocial",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "XLink": {
+      "type": "text"
+    },
+    "FacebookLink": {
+      "type": "text"
+    },
+    "InstagramLink": {
+      "type": "text"
+    }
+  }
+}

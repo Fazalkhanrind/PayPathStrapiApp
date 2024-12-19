@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_block_features_heroes",
+  "info": {
+    "displayName": "FeaturesHero",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "TopHeadText": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sheard.text"
+    },
+    "Image": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sheard.image"
+    },
+    "Video": {
+      "allowedTypes": [
+        "files",
+        "videos"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

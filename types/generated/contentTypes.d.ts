@@ -424,6 +424,35 @@ export interface ApiAboutAbout extends Struct.CollectionTypeSchema {
   };
 }
 
+export interface ApiAllPagesMainTextAllPagesMainText
+  extends Struct.SingleTypeSchema {
+  collectionName: 'all_pages_main_texts';
+  info: {
+    displayName: 'AllPagesMainText';
+    pluralName: 'all-pages-main-texts';
+    singularName: 'all-pages-main-text';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    AllPagesMainText: Schema.Attribute.Component<'block.main-text', false>;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::all-pages-main-text.all-pages-main-text'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiBlogBlog extends Struct.CollectionTypeSchema {
   collectionName: 'blogs';
   info: {
@@ -449,10 +478,126 @@ export interface ApiBlogBlog extends Struct.CollectionTypeSchema {
   };
 }
 
+export interface ApiComingSoonPageComingSoonPage
+  extends Struct.CollectionTypeSchema {
+  collectionName: 'coming_soon_pages';
+  info: {
+    description: '';
+    displayName: 'ComingSoonPage';
+    pluralName: 'coming-soon-pages';
+    singularName: 'coming-soon-page';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    ComingSoon: Schema.Attribute.Component<'block.coming-soon', false>;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::coming-soon-page.coming-soon-page'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiCoreFeatureCoreFeature extends Struct.CollectionTypeSchema {
+  collectionName: 'core_features';
+  info: {
+    displayName: 'CoreFeatures';
+    pluralName: 'core-features';
+    singularName: 'core-feature';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    CoreFeatures: Schema.Attribute.Component<'block.core-features', false>;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::core-feature.core-feature'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiErrorPageErrorPage extends Struct.CollectionTypeSchema {
+  collectionName: 'error_pages';
+  info: {
+    displayName: 'ErrorPage';
+    pluralName: 'error-pages';
+    singularName: 'error-page';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    Error404: Schema.Attribute.Component<'block.404', false>;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::error-page.error-page'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiFaqPageFaqPage extends Struct.CollectionTypeSchema {
+  collectionName: 'faq_pages';
+  info: {
+    description: '';
+    displayName: 'FAQPage';
+    pluralName: 'faq-pages';
+    singularName: 'faq-page';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    FAQs: Schema.Attribute.Component<'block.faq-page', true>;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::faq-page.faq-page'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiFaqFaq extends Struct.CollectionTypeSchema {
   collectionName: 'faqs';
   info: {
-    displayName: 'FAQ';
+    description: '';
+    displayName: 'FAQHome';
     pluralName: 'faqs';
     singularName: 'faq';
   };
@@ -466,6 +611,35 @@ export interface ApiFaqFaq extends Struct.CollectionTypeSchema {
     FAQ: Schema.Attribute.Component<'block.faq', false>;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<'oneToMany', 'api::faq.faq'> &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiFeaturesHeroFeaturesHero
+  extends Struct.CollectionTypeSchema {
+  collectionName: 'features_heroes';
+  info: {
+    displayName: 'FeaturesHero';
+    pluralName: 'features-heroes';
+    singularName: 'features-hero';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    FeaturesHero: Schema.Attribute.Component<'block.features-hero', false>;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::features-hero.features-hero'
+    > &
       Schema.Attribute.Private;
     publishedAt: Schema.Attribute.DateTime;
     updatedAt: Schema.Attribute.DateTime;
@@ -763,6 +937,32 @@ export interface ApiStateState extends Struct.CollectionTypeSchema {
       Schema.Attribute.Private;
     publishedAt: Schema.Attribute.DateTime;
     State: Schema.Attribute.Component<'block.state', false>;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiTeamTeam extends Struct.CollectionTypeSchema {
+  collectionName: 'teams';
+  info: {
+    description: '';
+    displayName: 'Team';
+    pluralName: 'teams';
+    singularName: 'team';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<'oneToMany', 'api::team.team'> &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    Team: Schema.Attribute.Component<'block.team', false>;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -1329,8 +1529,14 @@ declare module '@strapi/strapi' {
       'admin::user': AdminUser;
       'api::about-service.about-service': ApiAboutServiceAboutService;
       'api::about.about': ApiAboutAbout;
+      'api::all-pages-main-text.all-pages-main-text': ApiAllPagesMainTextAllPagesMainText;
       'api::blog.blog': ApiBlogBlog;
+      'api::coming-soon-page.coming-soon-page': ApiComingSoonPageComingSoonPage;
+      'api::core-feature.core-feature': ApiCoreFeatureCoreFeature;
+      'api::error-page.error-page': ApiErrorPageErrorPage;
+      'api::faq-page.faq-page': ApiFaqPageFaqPage;
       'api::faq.faq': ApiFaqFaq;
+      'api::features-hero.features-hero': ApiFeaturesHeroFeaturesHero;
       'api::footer-section.footer-section': ApiFooterSectionFooterSection;
       'api::goal.goal': ApiGoalGoal;
       'api::header-section.header-section': ApiHeaderSectionHeaderSection;
@@ -1341,6 +1547,7 @@ declare module '@strapi/strapi' {
       'api::service.service': ApiServiceService;
       'api::simplicity.simplicity': ApiSimplicitySimplicity;
       'api::state.state': ApiStateState;
+      'api::team.team': ApiTeamTeam;
       'api::testimonial.testimonial': ApiTestimonialTestimonial;
       'api::visa.visa': ApiVisaVisa;
       'plugin::content-releases.release': PluginContentReleasesRelease;
