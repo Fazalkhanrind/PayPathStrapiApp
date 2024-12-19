@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_sheard_social_media_accounts",
+  "info": {
+    "displayName": "SocialMediaAccounts",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Icons": {
+      "type": "enumeration",
+      "enum": [
+        "RiTwitterXFill",
+        "RiFacebookFill",
+        "RiInstagramFill"
+      ]
+    },
+    "Link": {
+      "type": "text"
+    }
+  }
+}

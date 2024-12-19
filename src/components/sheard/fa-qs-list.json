@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_sheard_fa_qs_lists",
+  "info": {
+    "displayName": "FAQsList"
+  },
+  "options": {},
+  "attributes": {
+    "Question": {
+      "type": "string"
+    },
+    "Answer": {
+      "type": "text"
+    }
+  }
+}

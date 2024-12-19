@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "coming_soon_pages",
+  "info": {
+    "singularName": "coming-soon-page",
+    "pluralName": "coming-soon-pages",
+    "displayName": "ComingSoonPage",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "ComingSoon": {
+      "type": "component",
+      "repeatable": false,
+      "component": "block.coming-soon"
+    }
+  }
+}

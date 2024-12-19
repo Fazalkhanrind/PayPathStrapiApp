@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_block_teams",
+  "info": {
+    "displayName": "Team",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "MainText": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sheard.text"
+    },
+    "TeamCard": {
+      "type": "component",
+      "repeatable": true,
+      "component": "sheard.team-card"
+    }
+  }
+}

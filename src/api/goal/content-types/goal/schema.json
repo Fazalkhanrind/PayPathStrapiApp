@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "goals",
+  "info": {
+    "singularName": "goal",
+    "pluralName": "goals",
+    "displayName": "Goals"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Goals": {
+      "type": "component",
+      "repeatable": false,
+      "component": "block.goal"
+    }
+  }
+}

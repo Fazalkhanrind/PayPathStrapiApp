@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_block_faqs",
+  "info": {
+    "displayName": "FAQ",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "MainText": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sheard.text"
+    },
+    "Button": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sheard.button"
+    },
+    "FAQs": {
+      "type": "component",
+      "repeatable": true,
+      "component": "sheard.fa-qs-list"
+    }
+  }
+}

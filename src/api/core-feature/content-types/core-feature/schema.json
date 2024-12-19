@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "core_features",
+  "info": {
+    "singularName": "core-feature",
+    "pluralName": "core-features",
+    "displayName": "CoreFeatures"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "CoreFeatures": {
+      "type": "component",
+      "repeatable": false,
+      "component": "block.core-features"
+    }
+  }
+}

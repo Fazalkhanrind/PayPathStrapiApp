@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_block_core_features",
+  "info": {
+    "displayName": "CoreFeatures",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "HeadText": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sheard.text"
+    },
+    "Image": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sheard.image"
+    },
+    "Cards": {
+      "type": "component",
+      "repeatable": true,
+      "component": "sheard.text"
+    }
+  }
+}

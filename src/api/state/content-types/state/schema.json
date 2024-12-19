@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "states",
+  "info": {
+    "singularName": "state",
+    "pluralName": "states",
+    "displayName": "State"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "State": {
+      "type": "component",
+      "repeatable": false,
+      "component": "block.state"
+    }
+  }
+}

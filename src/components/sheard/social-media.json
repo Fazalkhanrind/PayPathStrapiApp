@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_sheard_social_medias",
+  "info": {
+    "displayName": "socialMedia",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Logo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
+    },
+    "Link": {
+      "type": "string"
+    }
+  }
+}

@@ -79,6 +79,16 @@
       "type": "component",
       "repeatable": false,
       "component": "block.testimonials"
+    },
+    "FAQ": {
+      "type": "component",
+      "repeatable": false,
+      "component": "block.faq"
+    },
+    "Blogs": {
+      "type": "component",
+      "repeatable": false,
+      "component": "block.blog"
     }
   }
 }

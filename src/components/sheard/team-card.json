@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_sheard_team_cards",
+  "info": {
+    "displayName": "TeamCard",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "ProfileImage": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sheard.image"
+    },
+    "CardText": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sheard.text"
+    },
+    "SocialMediaAccountLink": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sheard.team-social-media-account"
+    }
+  }
+}

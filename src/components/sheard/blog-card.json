@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_sheard_blog_cards",
+  "info": {
+    "displayName": "BlogCard",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Card": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sheard.card"
+    },
+    "date": {
+      "type": "date"
+    },
+    "views": {
+      "type": "string"
+    },
+    "Button": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sheard.button"
+    }
+  }
+}

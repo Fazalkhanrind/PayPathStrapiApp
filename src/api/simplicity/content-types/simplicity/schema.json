@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "simplicities",
+  "info": {
+    "singularName": "simplicity",
+    "pluralName": "simplicities",
+    "displayName": "Simplicity"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Simplicity": {
+      "type": "component",
+      "repeatable": false,
+      "component": "block.simplicity"
+    }
+  }
+}

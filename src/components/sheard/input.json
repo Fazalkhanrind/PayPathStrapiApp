@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_sheard_inputs",
+  "info": {
+    "displayName": "Input",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "IsRequired": {
+      "type": "boolean",
+      "default": true
+    },
+    "Placeholder": {
+      "type": "string"
+    },
+    "Lable": {
+      "type": "string"
+    }
+  }
+}

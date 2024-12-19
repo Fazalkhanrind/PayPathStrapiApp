@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_block_coming_soons",
+  "info": {
+    "displayName": "ComingSoon",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "FirstHeading": {
+      "type": "string"
+    },
+    "SecondHeading": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "image": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sheard.image"
+    },
+    "SocialMedia": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sheard.company-social"
+    },
+    "Copyright": {
+      "type": "text"
+    }
+  }
+}

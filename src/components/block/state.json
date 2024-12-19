@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_block_states",
+  "info": {
+    "displayName": "State",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "HeadText": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sheard.text"
+    },
+    "StatsCards": {
+      "type": "component",
+      "repeatable": true,
+      "component": "sheard.text"
+    },
+    "image": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sheard.image"
+    }
+  }
+}
