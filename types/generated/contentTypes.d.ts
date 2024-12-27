@@ -428,6 +428,7 @@ export interface ApiAllPagesMainTextAllPagesMainText
   extends Struct.SingleTypeSchema {
   collectionName: 'all_pages_main_texts';
   info: {
+    description: '';
     displayName: 'AllPagesMainText';
     pluralName: 'all-pages-main-texts';
     singularName: 'all-pages-main-text';

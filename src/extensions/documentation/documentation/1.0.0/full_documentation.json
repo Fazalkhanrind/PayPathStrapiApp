@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2024-12-19T13:29:21.325Z"
+    "x-generation-date": "2024-12-27T11:40:52.571Z"
   },
   "x-strapi-config": {
     "plugins": [
@@ -13933,11 +13933,29 @@
           "id": {
             "type": "number"
           },
-          "TopText": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/SheardTextComponent"
-            }
+          "AboutUs": {
+            "$ref": "#/components/schemas/SheardTextComponent"
+          },
+          "Features": {
+            "$ref": "#/components/schemas/SheardTextComponent"
+          },
+          "Pricing": {
+            "$ref": "#/components/schemas/SheardTextComponent"
+          },
+          "ContactUs": {
+            "$ref": "#/components/schemas/SheardTextComponent"
+          },
+          "Team": {
+            "$ref": "#/components/schemas/SheardTextComponent"
+          },
+          "Testimonials": {
+            "$ref": "#/components/schemas/SheardTextComponent"
+          },
+          "Blog": {
+            "$ref": "#/components/schemas/SheardTextComponent"
+          },
+          "FAQ": {
+            "$ref": "#/components/schemas/SheardTextComponent"
           }
         }
       },

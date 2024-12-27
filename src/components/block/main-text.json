@@ -1,13 +1,49 @@
 {
   "collectionName": "components_block_main_texts",
   "info": {
-    "displayName": "MainText"
+    "displayName": "MainText",
+    "description": ""
   },
   "options": {},
   "attributes": {
-    "TopText": {
+    "AboutUs": {
       "type": "component",
-      "repeatable": true,
+      "repeatable": false,
+      "component": "sheard.text"
+    },
+    "Features": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sheard.text"
+    },
+    "Pricing": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sheard.text"
+    },
+    "ContactUs": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sheard.text"
+    },
+    "Team": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sheard.text"
+    },
+    "Testimonials": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sheard.text"
+    },
+    "Blog": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sheard.text"
+    },
+    "FAQ": {
+      "type": "component",
+      "repeatable": false,
       "component": "sheard.text"
     }
   }

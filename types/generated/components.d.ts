@@ -159,10 +159,18 @@ export interface BlockGoal extends Struct.ComponentSchema {
 export interface BlockMainText extends Struct.ComponentSchema {
   collectionName: 'components_block_main_texts';
   info: {
+    description: '';
     displayName: 'MainText';
   };
   attributes: {
-    TopText: Schema.Attribute.Component<'sheard.text', true>;
+    AboutUs: Schema.Attribute.Component<'sheard.text', false>;
+    Blog: Schema.Attribute.Component<'sheard.text', false>;
+    ContactUs: Schema.Attribute.Component<'sheard.text', false>;
+    FAQ: Schema.Attribute.Component<'sheard.text', false>;
+    Features: Schema.Attribute.Component<'sheard.text', false>;
+    Pricing: Schema.Attribute.Component<'sheard.text', false>;
+    Team: Schema.Attribute.Component<'sheard.text', false>;
+    Testimonials: Schema.Attribute.Component<'sheard.text', false>;
   };
 }
 

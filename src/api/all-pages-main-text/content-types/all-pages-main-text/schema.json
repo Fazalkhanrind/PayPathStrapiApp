@@ -4,7 +4,8 @@
   "info": {
     "singularName": "all-pages-main-text",
     "pluralName": "all-pages-main-texts",
-    "displayName": "AllPagesMainText"
+    "displayName": "AllPagesMainText",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
